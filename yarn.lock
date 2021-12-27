@@ -306,7 +306,7 @@
     "@babel/helper-remap-async-to-generator" "^7.16.5"
     "@babel/plugin-syntax-async-generators" "^7.8.4"
 
-"@babel/plugin-proposal-class-properties@^7.1.0", "@babel/plugin-proposal-class-properties@^7.13.0", "@babel/plugin-proposal-class-properties@^7.16.5", "@babel/plugin-proposal-class-properties@^7.8.3":
+"@babel/plugin-proposal-class-properties@^7.1.0", "@babel/plugin-proposal-class-properties@^7.16.5", "@babel/plugin-proposal-class-properties@^7.8.3":
   version "7.16.5"
   resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-class-properties/-/plugin-proposal-class-properties-7.16.5.tgz#3269f44b89122110f6339806e05d43d84106468a"
   integrity sha512-pJD3HjgRv83s5dv1sTnDbZOaTjghKEz8KUn1Kbh2eAIRhGuyQ1XSeI4xVXU3UlIEVA3DAyIdxqT1eRn7Wcn55A==
@@ -857,7 +857,7 @@
     core-js "^2.6.5"
     regenerator-runtime "^0.13.4"
 
-"@babel/preset-env@^7.10.2", "@babel/preset-env@^7.12.0", "@babel/preset-env@^7.16.5", "@babel/preset-env@^7.9.0":
+"@babel/preset-env@^7.10.2", "@babel/preset-env@^7.16.5", "@babel/preset-env@^7.9.0":
   version "7.16.5"
   resolved "https://registry.yarnpkg.com/@babel/preset-env/-/preset-env-7.16.5.tgz#2e94d922f4a890979af04ffeb6a6b4e44ba90847"
   integrity sha512-MiJJW5pwsktG61NDxpZ4oJ1CKxM1ncam9bzRtx9g40/WkLRkxFP6mhpkYV0/DxcciqoiHicx291+eUQrXb/SfQ==
@@ -6076,20 +6076,22 @@ ember-cli-babel-plugin-helpers@^1.0.0, ember-cli-babel-plugin-helpers@^1.1.0, em
   resolved "https://registry.yarnpkg.com/ember-cli-babel-plugin-helpers/-/ember-cli-babel-plugin-helpers-1.1.1.tgz#5016b80cdef37036c4282eef2d863e1d73576879"
   integrity sha512-sKvOiPNHr5F/60NLd7SFzMpYPte/nnGkq/tMIfXejfKHIhaiIkYFqX8Z9UFTKWLLn+V7NOaby6niNPZUdvKCRw==
 
-ember-cli-babel@7.26.6:
-  version "7.26.6"
-  resolved "https://registry.yarnpkg.com/ember-cli-babel/-/ember-cli-babel-7.26.6.tgz#322fbbd3baad9dd99e3276ff05bc6faef5e54b39"
-  integrity sha512-040svtfj2RC35j/WMwdWJFusZaXmNoytLAMyBDGLMSlRvznudTxZjGlPV6UupmtTBApy58cEF8Fq4a+COWoEmQ==
+ember-cli-babel@7.26.11:
+  version "7.26.11"
+  resolved "https://registry.yarnpkg.com/ember-cli-babel/-/ember-cli-babel-7.26.11.tgz#50da0fe4dcd99aada499843940fec75076249a9f"
+  integrity sha512-JJYeYjiz/JTn34q7F5DSOjkkZqy8qwFOOxXfE6pe9yEJqWGu4qErKxlz8I22JoVEQ/aBUO+OcKTpmctvykM9YA==
   dependencies:
     "@babel/core" "^7.12.0"
     "@babel/helper-compilation-targets" "^7.12.0"
-    "@babel/plugin-proposal-class-properties" "^7.13.0"
+    "@babel/plugin-proposal-class-properties" "^7.16.5"
     "@babel/plugin-proposal-decorators" "^7.13.5"
+    "@babel/plugin-proposal-private-methods" "^7.16.5"
+    "@babel/plugin-proposal-private-property-in-object" "^7.16.5"
     "@babel/plugin-transform-modules-amd" "^7.13.0"
     "@babel/plugin-transform-runtime" "^7.13.9"
     "@babel/plugin-transform-typescript" "^7.13.0"
     "@babel/polyfill" "^7.11.5"
-    "@babel/preset-env" "^7.12.0"
+    "@babel/preset-env" "^7.16.5"
     "@babel/runtime" "7.12.18"
     amd-name-resolver "^1.3.1"
     babel-plugin-debug-macros "^0.3.4"
@@ -6100,6 +6102,7 @@ ember-cli-babel@7.26.6:
     broccoli-debug "^0.6.4"
     broccoli-funnel "^2.0.2"
     broccoli-source "^2.1.2"
+    calculate-cache-key-for-tree "^2.0.0"
     clone "^2.1.2"
     ember-cli-babel-plugin-helpers "^1.1.1"
     ember-cli-version-checker "^4.1.0"
